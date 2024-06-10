@@ -45,4 +45,4 @@ def get_versiculo(livro, capitulo, versiculo):
     return jsonify({'message': 'Versículo não encontrado'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host='0.0.0.0', port=5000, debug=False)
